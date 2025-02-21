@@ -28,8 +28,7 @@ const Footer = () => {
                 <Link
                   to="/"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   홈
                 </Link>
               </li>
@@ -37,8 +36,7 @@ const Footer = () => {
                 <Link
                   to="/about"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   회사 정보
                 </Link>
               </li>
@@ -46,8 +44,7 @@ const Footer = () => {
                 <Link
                   to="/leadership"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   임원 소개
                 </Link>
               </li>
@@ -55,8 +52,7 @@ const Footer = () => {
                 <Link
                   to="/board"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   업무 게시판
                 </Link>
               </li>
@@ -64,8 +60,7 @@ const Footer = () => {
                 <Link
                   to="/our-services"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   제공 기술
                 </Link>
               </li>
@@ -73,8 +68,7 @@ const Footer = () => {
                 <Link
                   to="/contact"
                   onClick={scrollToTop}
-                  className="hover:text-white transition-colors"
-                >
+                  className="hover:text-white transition-colors">
                   문의
                 </Link>
               </li>
@@ -96,26 +90,22 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+                className="text-gray-400 hover:text-white transition-colors">
                 <FaFacebook size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+                className="text-gray-400 hover:text-white transition-colors">
                 <FaTwitter size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+                className="text-gray-400 hover:text-white transition-colors">
                 <FaInstagram size={20} />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
+                className="text-gray-400 hover:text-white transition-colors">
                 <FaLinkedin size={20} />
               </a>
             </div>
