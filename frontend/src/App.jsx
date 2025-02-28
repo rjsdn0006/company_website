@@ -9,6 +9,9 @@ import Board from "./Pages/Board/Board";
 import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
 
+// ✅ gap은 Flex/Grid에서,
+// 🔥 space-y는 그냥 형제 요소 간격에 깔끔하게 쓰기!
+
 function Layout() {
   return (
     <>
