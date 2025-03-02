@@ -44,29 +44,30 @@ const Forum = () => {
       createdAt: "2023-01-20",
     },
   ];
+
   return (
     <div className="bg-white">
-      <div className="container mx-auto px-4 py-28 lg:pt-30 max-w-6xl">
-        {/* div-1 */}
+      <div className="container mx-auto px-4 py-28 lg:py-32 max-w-6xl">
         <div className="text-center mb-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
             업무 게시판
           </h2>
         </div>
 
-        {/* div-2 */}
         <div className="flex justify-end mb-4">
           <Link
             to="/board"
             className="px-5 py-2 bg-white text-gray-900 rounded-lg hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2 border border-gray-200"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             전체보기
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor">
+              stroke="currentColor"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -77,7 +78,6 @@ const Forum = () => {
           </Link>
         </div>
 
-        {/* div-3 */}
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {dummyPosts.length === 0 ? (
             <div className="p-6 text-center text-gray-500">
@@ -87,12 +87,10 @@ const Forum = () => {
             dummyPosts.map((post) => (
               <div
                 key={post._id}
-                className="border-b border-gray-100 last:border-b-0 hover:bg-blue-50 transition-colors duration-300">
+                className="border-b border-gray-100 last:border-b-0 hover:bg-blue-50 transition-colors duration-300"
+              >
                 <div className="p-6 flex items-center justify-between">
-                  {/* 게시판 좌측영역 */}
-
                   <div className="flex-1">
-                    {/* 게시물 상세정보 */}
                     <div className="flex items-center gap-4 mb-2">
                       <span className="text-gray-500 text-sm">
                         No. {post.number}
@@ -106,23 +104,19 @@ const Forum = () => {
                         </span>
                       )}
                     </div>
-
-                    {/* 게시물 제목 */}
                     <h3 className="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-300">
                       {post.title}
                     </h3>
-
-                    {/* 게시물 생성일자 */}
                     <div className="mt-2 text-gray-500">{post.createdAt}</div>
                   </div>
-                  {/* 게시판 우측영역 */}
                   <div className="ml-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-blue-600"
                       fill="none"
                       viewBox="0 0 24 24"
-                      stroke="currentColor">
+                      stroke="currentColor"
+                    >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
