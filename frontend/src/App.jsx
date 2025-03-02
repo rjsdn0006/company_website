@@ -10,7 +10,9 @@ import Services from "./Pages/Services/Services";
 import Contact from "./Pages/Contact/Contact";
 
 // ✅ gap은 Flex/Grid에서,
-// 🔥 space-y는 그냥 형제 요소 간격에 깔끔하게 쓰기!
+// ✅ space-y는 그냥 형제 요소 간격에 깔끔하게 쓰인다.
+
+// ✅ mx-auto를 쓰고싶다면 max-w-7xl 처럼 width크기를 지정해주어야 한다.
 
 function Layout() {
   return (
